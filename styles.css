@@ -1,0 +1,325 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: url('your-header-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header-content {
+    margin-bottom: 20px;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+}
+
+.logo-container {
+    margin: 20px auto;
+}
+
+.logo {
+    width: 500px; /* Adjust the size as needed */
+    height: auto;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: black;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Wing Animation Styles */
+.wing {
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background: #FFA500; /* Wing color */
+    border-radius: 50%;
+    top: 50%;
+    transform-origin: center;
+}
+
+.wing-left {
+    left: -15px;
+    transform: rotate(-30deg);
+}
+
+.wing-right {
+    right: -15px;
+    transform: rotate(30deg);
+}
+
+@keyframes fly {
+    0% {
+        left: -60px;
+        transform: translateY(-50%) rotate(0deg);
+    }
+    25% {
+        left: 25%;
+        transform: translateY(-50%) rotate(-10deg);
+    }
+    50% {
+        left: 50%;
+        transform: translateY(-60%) rotate(0deg);
+    }
+    75% {
+        left: 75%;
+        transform: translateY(-50%) rotate(10deg);
+    }
+    100% {
+        left: 100vw;
+        transform: translateY(-50%) rotate(0deg);
+    }
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Center content */
+}
+
+h2 {
+    color: #3c8dbc;
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: black; /* Changed to black */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: black; /* Changed to black */
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Committee Section Styles */
+.committee-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.member-info h3 {
+    margin: 0;
+}
+
+.member-info p {
+    margin: 5px 0;
+}
+
+/* Intro, Inspiration, Impact, Mission Styles */
+.intro, .inspiration, .impact, .mission {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro-image, .inspiration-image, .impact-image, .mission-image {
+    width: 50%;
+    height: auto;
+}
+
+.intro-text, .inspiration-text, .impact-text, .mission-text {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Call-to-Action Styles */
+.call-to-action {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+.call-to-action .btn {
+    padding: 10px 20px;
+    background: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Vision & Mission Page Styles */
+.vision-mission {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.vision, .mission {
+    margin-bottom: 40px;
+}
+
+.vision h2, .mission h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.vision p, .mission ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.mission ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.mission ul li {
+    margin-bottom: 10px;
+}
+
+/* Impact Page Styles */
+.impact {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.impact-section {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.impact-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.impact-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.impact-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Activities Page Styles */
+.activities {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.activity-section {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.activity-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.activity-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.activity-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
