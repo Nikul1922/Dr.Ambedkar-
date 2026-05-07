@@ -13,6 +13,29 @@ body {
 }
 
 /* Header Styles */
+.blink-cctv {
+    color: #ff0000;
+    font-weight: bold;
+    animation: blinkGlow 1s infinite;
+}
+
+@keyframes blinkGlow {
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 5px red;
+    }
+
+    50% {
+        opacity: 0.3;
+        text-shadow: 0 0 20px red;
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 5px red;
+    }
+}
+
 header {
     background: url('your-header-background.jpg') no-repeat center center;
     background-size: cover;
