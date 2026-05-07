@@ -16,7 +16,9 @@ body {
 .blink-cctv {
     color: #ff0000;
     font-weight: bold;
+    font-size: 22px;   /* Increase text size */
     animation: blinkGlow 1s infinite;
+    text-decoration: none;
 }
 
 @keyframes blinkGlow {
